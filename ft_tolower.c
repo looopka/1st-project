@@ -1,26 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dtanesha <dtanesha@student.21-school.ru>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/05/01 12:14:48 by dtanesha          #+#    #+#             */
-/*   Updated: 2020/05/03 15:15:02 by dtanesha         ###   ########.fr       */
+/*   Created: 2020/05/10 18:00:18 by dtanesha          #+#    #+#             */
+/*   Updated: 2020/05/17 17:14:45 by dtanesha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "libft.h"
 
-void *ft_memset(void *s, int c, size_t n)
+static int	ft_isupper(int c)
 {
-	void *ptr;
+	if ((unsigned char)c >= 'A' && (unsigned char)c <= 'Z')
+		return (c);
+	return (0);
+}
 
-	ptr = s;
-	while (n-- > 0)
-	{
-		*(unsigned char *)ptr = (unsigned char)c;
-		ptr = ptr + 1;
-	}
-	return (s);
+int			ft_tolower(int c)
+{
+	if (ft_isupper(c) > 0)
+		return (c + 32);
+	return (c);
 }

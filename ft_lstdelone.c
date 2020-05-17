@@ -1,26 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dtanesha <dtanesha@student.21-school.ru>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/05/03 16:36:28 by dtanesha          #+#    #+#             */
-/*   Updated: 2020/05/03 17:01:01 by dtanesha         ###   ########.fr       */
+/*   Created: 2020/05/17 15:01:35 by dtanesha          #+#    #+#             */
+/*   Updated: 2020/05/17 16:25:09 by dtanesha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "libft.h"
 
-void *ft_memchr(const void *s, int c, size_t n)
+void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
-	while (n-- > 0)
+	if (lst)
 	{
-		if (*(unsigned char*)s == (unsigned char) c)
-		{
-			return (unsigned char *)s;
-		}
-		s = s + 1;
+		del(lst->content);
+		free(lst);
+		lst = NULL;
 	}
-	return (NULL);
 }
