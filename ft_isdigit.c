@@ -6,11 +6,9 @@
 /*   By: dtanesha <dtanesha@student.21-school.ru>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/09 20:00:13 by dtanesha          #+#    #+#             */
-/*   Updated: 2020/05/23 15:21:31 by dtanesha         ###   ########.fr       */
+/*   Updated: 2020/05/23 17:06:07 by dtanesha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isdigit(int c)
 {

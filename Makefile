@@ -6,7 +6,7 @@
 #    By: dtanesha <dtanesha@student.21-school.ru>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/03/09 13:53:45 by dtanesha          #+#    #+#              #
-#    Updated: 2020/05/23 14:42:55 by dtanesha         ###   ########.fr        #
+#    Updated: 2020/05/23 17:05:14 by dtanesha         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,9 +40,9 @@ $(NAME): libft.h $(OBJECT)
 	gcc -Wall -Wextra -Werror  -c $(FILE) -I$(INC)
 	ar rv $(NAME) $(OBJECT)
 
-bonus: $(NAME) $(BONUS_OBJECT)
-	gcc -Wall -Wextra -Werror  -c $(BONUS_FILE) -I$(INC)
-	ar rv $(NAME) $(BONUS_OBJECT)
+bonus: $(BONUS_OBJECT) libft.h
+	gcc -Wall -Wextra -Werror  -c $(BONUS_FILE) $(FILE) -I$(INC)
+	ar rv $(NAME) $(OBJECT) $(BONUS_OBJECT)
 clean:
 	/bin/rm -f $(OBJECT) $(BONUS_OBJECT)
 

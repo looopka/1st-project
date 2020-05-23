@@ -6,7 +6,7 @@
 /*   By: dtanesha <dtanesha@student.21-school.ru>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/03 16:36:28 by dtanesha          #+#    #+#             */
-/*   Updated: 2020/05/17 16:12:55 by dtanesha         ###   ########.fr       */
+/*   Updated: 2020/05/23 17:05:52 by dtanesha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	{
 		if (*(unsigned char*)s == (unsigned char)c)
 		{
-			return (unsigned char *)s;
+			return ((void *)s);
 		}
 		s = s + 1;
 	}

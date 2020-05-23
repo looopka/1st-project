@@ -6,7 +6,7 @@
 /*   By: dtanesha <dtanesha@student.21-school.ru>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/09 20:02:33 by dtanesha          #+#    #+#             */
-/*   Updated: 2020/05/17 16:11:29 by dtanesha         ###   ########.fr       */
+/*   Updated: 2020/05/23 16:40:01 by dtanesha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 static int	ft_isspace(int c)
 {
-	if ((unsigned char)c == ' ' || (unsigned char)c == '\f' ||
-		(unsigned char)c == '\n' || (unsigned char)c == '\r' ||
-		(unsigned char)c == '\t' || (unsigned char)c == '\v')
+	if (c == ' ' || c == '\f' ||
+		c == '\n' || c == '\r' ||
+		c == '\t' || c == '\v')
 		return (c);
 	return (0);
 }

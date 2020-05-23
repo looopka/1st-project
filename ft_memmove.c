@@ -6,7 +6,7 @@
 /*   By: dtanesha <dtanesha@student.21-school.ru>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/03 15:53:34 by dtanesha          #+#    #+#             */
-/*   Updated: 2020/05/23 15:07:19 by dtanesha         ###   ########.fr       */
+/*   Updated: 2020/05/23 17:08:20 by dtanesha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		}
 	}
 	else
-		ft_memcpy(dest,src,n);
+		ft_memcpy(dest, src, n);
 	return (dest);
 }

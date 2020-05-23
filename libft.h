@@ -6,13 +6,12 @@
 /*   By: dtanesha <dtanesha@student.21-school.ru>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/30 20:49:46 by dtanesha          #+#    #+#             */
-/*   Updated: 2020/05/23 14:40:32 by dtanesha         ###   ########.fr       */
+/*   Updated: 2020/05/23 16:50:10 by dtanesha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-# define LOL
 
 # include <unistd.h>
 # include <stdlib.h>

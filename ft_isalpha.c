@@ -6,11 +6,11 @@
 /*   By: dtanesha <dtanesha@student.21-school.ru>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/10 16:53:49 by dtanesha          #+#    #+#             */
-/*   Updated: 2020/05/23 15:20:33 by dtanesha         ###   ########.fr       */
+/*   Updated: 2020/05/23 16:40:36 by dtanesha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int			ft_isalpha(int c)
 {
-	return((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
+	return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
 }

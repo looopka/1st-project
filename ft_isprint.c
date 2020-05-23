@@ -6,11 +6,9 @@
 /*   By: dtanesha <dtanesha@student.21-school.ru>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/10 17:47:29 by dtanesha          #+#    #+#             */
-/*   Updated: 2020/05/17 16:12:12 by dtanesha         ###   ########.fr       */
+/*   Updated: 2020/05/23 17:06:02 by dtanesha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isprint(int c)
 {
