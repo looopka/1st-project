@@ -6,7 +6,7 @@
 /*   By: dtanesha <dtanesha@student.21-school.ru>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/03 15:53:34 by dtanesha          #+#    #+#             */
-/*   Updated: 2020/05/17 16:13:10 by dtanesha         ###   ########.fr       */
+/*   Updated: 2020/05/23 15:07:19 by dtanesha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,21 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	unsigned char buff[n];
+	void		*dst_buff;
+	const void	*src_buff;
 
-	ft_memcpy(buff, src, n);
-	ft_memcpy(dest, buff, n);
+	if (!n || src == dest)
+		return (dest);
+	if (dest > src)
+	{
+		dst_buff = dest + n;
+		src_buff = src + n;
+		while (n-- > 0)
+		{
+			*(unsigned char *)--dst_buff = *(unsigned char *)--src_buff;
+		}
+	}
+	else
+		ft_memcpy(dest,src,n);
 	return (dest);
 }

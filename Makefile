@@ -6,7 +6,7 @@
 #    By: dtanesha <dtanesha@student.21-school.ru>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/03/09 13:53:45 by dtanesha          #+#    #+#              #
-#    Updated: 2020/05/17 17:18:44 by dtanesha         ###   ########.fr        #
+#    Updated: 2020/05/23 14:42:55 by dtanesha         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,12 +35,12 @@ BONUS_OBJECT =	ft_lstnew.o ft_lstadd_front.o ft_lstsize.o ft_lstlast.o\
 
 .PHONY: all clean
 
-all: $(NAME)
-$(NAME):
+all: $(NAME) 
+$(NAME): libft.h $(OBJECT)
 	gcc -Wall -Wextra -Werror  -c $(FILE) -I$(INC)
 	ar rv $(NAME) $(OBJECT)
 
-bonus: $(NAME)
+bonus: $(NAME) $(BONUS_OBJECT)
 	gcc -Wall -Wextra -Werror  -c $(BONUS_FILE) -I$(INC)
 	ar rv $(NAME) $(BONUS_OBJECT)
 clean:

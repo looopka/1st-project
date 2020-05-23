@@ -6,7 +6,7 @@
 /*   By: dtanesha <dtanesha@student.21-school.ru>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/10 17:04:07 by dtanesha          #+#    #+#             */
-/*   Updated: 2020/05/17 16:11:55 by dtanesha         ###   ########.fr       */
+/*   Updated: 2020/05/23 15:23:14 by dtanesha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,5 @@
 
 int	ft_isalnum(int c)
 {
-	if (ft_isalpha(c) != 0 || ft_isdigit(c) != 0)
-		return (c);
-	return (0);
+	return((ft_isalpha(c) || ft_isdigit(c)));
 }
