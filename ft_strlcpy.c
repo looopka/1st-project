@@ -6,7 +6,7 @@
 /*   By: dtanesha <dtanesha@student.21-school.ru>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/03 18:19:44 by dtanesha          #+#    #+#             */
-/*   Updated: 2020/05/17 16:14:00 by dtanesha         ###   ########.fr       */
+/*   Updated: 2020/05/23 18:11:55 by dtanesha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	dst_buf = dst;
 	src_buf = src;
 	n = size;
+	if (dst == NULL || src == NULL)
+		return (0);
 	if (n != 0)
 	{
 		while (--n != 0)
