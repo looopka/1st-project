@@ -6,7 +6,7 @@
 /*   By: dtanesha <dtanesha@student.21-school.ru>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/16 20:11:30 by dtanesha          #+#    #+#             */
-/*   Updated: 2020/05/23 17:05:45 by dtanesha         ###   ########.fr       */
+/*   Updated: 2020/05/28 20:39:08 by dtanesha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ char		*ft_itoa(int n)
 	i = 0;
 	nb = (n < 0) ? -n : n;
 	len = ft_dcnt(nb);
-	if (!(nbr = (char *)malloc(len + 1 + sizeof(char) + (n < 0 ? 1 : 0))))
+	if (!(nbr = (char *)malloc(sizeof(char) * (len + 1 + (n < 0 ? 1 : 0)))))
 		return (NULL);
 	if (n < 0)
 	{
